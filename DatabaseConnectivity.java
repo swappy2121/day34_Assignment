@@ -1,7 +1,5 @@
 package com.Bridgelabz;
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
+import java.sql.*;
 import java.util.Enumeration;
 
 
@@ -27,6 +25,8 @@ public class DatabaseConnectivity {
             e.printStackTrace();
         }
     }
+
+
 
     public static void listDrivers() {
         Enumeration<Driver> driverList = DriverManager.getDrivers();
